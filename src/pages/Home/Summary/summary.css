@@ -1,0 +1,32 @@
+.summary {
+  width: 100%;
+  padding-top: var(--navbar-height);
+}
+
+.summary-header {
+  height: 30px;
+  width: 100%;
+  object-fit: contain;
+  margin: 35px 0 15px 0;
+}
+
+.summary-gallery {
+  max-width: 1080px;
+  margin: auto;
+  text-align: center;
+}
+
+.summary-panel {
+  width: 250px;
+  height: calc(250px * (225 / 400));
+  margin: 20px 10px 0 10px;
+  display: inline-block;
+}
+
+@media (max-width: 560px) {
+  .summary-panel {
+    width: 300px;
+    height: calc(300px * (225 / 400));
+    margin: 20px 0 0 0;
+  }
+}

@@ -1,0 +1,51 @@
+:root {
+  --chocolate: #212121;
+  --dark: #181818;
+  --gold: #ffde59;
+  --gold-dark: #806600;
+  --h1: 'BebasNeue', sans-serif;
+  --navbar-height: 80px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark);
+  font-family: 'Arimo', sans-serif;
+  font-size: 16px;
+  color: white;
+  overflow-x: hidden;
+}
+
+a {
+  margin: 0;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+textarea {
+  font-family: 'Arimo', sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border: 0;
+  padding: 10px;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Arimo';
+  src: url(./assets/fonts/Arimo-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url(./assets/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Parisienne';
+  src: url(./assets/fonts/Parisienne-Regular.ttf);
+}

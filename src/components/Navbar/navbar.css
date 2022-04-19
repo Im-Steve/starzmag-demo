@@ -1,0 +1,112 @@
+.upper-band {
+  position: fixed;
+  top: -100px;
+  height: 100px;
+  width: 100vw;
+  z-index: 1000;
+  background-color: var(--dark);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  height: var(--navbar-height);
+  width: 100vw;
+  z-index: 800;
+  background-color: var(--chocolate);
+  transition: top 0.5s;
+}
+
+.navbar-hidden {
+  top: calc(var(--navbar-height) * -1);
+}
+
+.navbar > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-laptop > div {
+  width: calc(100% - 20px);
+}
+
+.navbar-center {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-center > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.navbar-left {
+  width: 30%;
+}
+
+.navbar-right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-login {
+  margin-right: 25px;
+  border-style: solid;
+  border-color: var(--gold);
+  border-width: 1px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar-login > p {
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.navbar-login > img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.navbar-login:hover {
+  box-shadow: 0 0 5px 2px var(--gold);
+}
+
+@media (hover: none) {
+  .navbar-login:hover {
+    box-shadow: 0 0 0 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar-login {
+    margin-right: 15px;
+    border-width: 0;
+    padding: 0;
+  }
+
+  .navbar-login > p {
+    display: none;
+  }
+
+  .navbar-login > img {
+    width: 30px;
+    margin-right: 0;
+  }
+
+  .navbar-login:hover {
+    box-shadow: 0 0 0 0;
+  }
+}
+
+.mini-login {
+  width: 330px;
+}

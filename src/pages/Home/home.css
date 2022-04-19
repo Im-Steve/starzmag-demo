@@ -1,0 +1,13 @@
+.home-cover {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 900;
+  cursor: pointer;
+  transition: top 1s;
+}
+
+.home-cover-up {
+  top: -100%;
+}

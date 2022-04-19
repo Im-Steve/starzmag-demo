@@ -1,0 +1,233 @@
+.cover-container,
+.cover-background {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 30% center;
+  background-size: cover;
+}
+
+.cover-container {
+  background-color: black;
+  background-image: url(../../../assets/cover/cover-bg.jpg);
+}
+
+.cover-background {
+  background-image: url(../../../assets/cover/cover-bg.gif);
+}
+
+.cover-title {
+  position: absolute;
+  top: 20px;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cover-title > img {
+  height: 100%;
+  width: 95%;
+  object-fit: contain;
+  object-position: 50% 0;
+}
+
+.cover-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover-footer > img {
+  height: 10px;
+}
+
+.cover-footer > p {
+  font-size: 14px;
+  color: var(--gold);
+  margin: 5px 0 10px 0;
+}
+
+@media (max-height: 80vw) {
+  .cover-content {
+    position: absolute;
+    bottom: 42px;
+    margin: 0 15vw;
+    height: 27vh;
+    width: calc(100% - 30vw);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .cover-content > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cover-content > div > img:nth-child(1) {
+    height: 22vh;
+    object-fit: contain;
+  }
+
+  .cover-content-authors > img:nth-child(1) {
+    position: relative;
+    left: 10%;
+    z-index: 2;
+  }
+
+  .cover-content-authors > img:nth-child(2) {
+    display: none;
+  }
+
+  .cover-content-authors > div {
+    position: relative;
+    top: -15%;
+    left: 5%;
+    height: 27vh;
+    width: calc(27vh * 0.7);
+    background-size: cover;
+    background-position: 37% 100%;
+    background-image: url(../../../assets/cover/cover-authors-girl.jpg);
+  }
+
+  .cover-content-authors > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 37% 100%;
+  }
+
+  .cover-content-authors > img:nth-child(4) {
+    position: relative;
+    top: 25%;
+    left: -37%;
+    height: 16vh;
+    width: calc(16vh * 0.7);
+    object-fit: cover;
+    transform: rotate(-20deg);
+  }
+
+  .cover-content-topscovers > div {
+    position: absolute;
+    top: 25%;
+    height: 65%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-image: url(../../../assets/cover/cover-topscovers-band.jpg);
+  }
+
+  .cover-content-topscovers > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (min-height: 80vw) {
+  .cover-content {
+    position: absolute;
+    top: calc(15px + 20%);
+    margin: 3vh 3vw;
+    height: calc(100% - 15px - 20% - 42px - 6vh);
+    width: calc(100% - 6vw);
+  }
+
+  .cover-content > div > img:nth-child(1) {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .cover-content-interviews {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 35%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .cover-content-authors {
+    position: absolute;
+    bottom: 65%;
+    right: 0;
+    height: 25%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .cover-content-authors > img:nth-child(1) {
+    display: none;
+  }
+
+  .cover-content-authors > img:nth-child(2) {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .cover-content-authors > div {
+    position: absolute;
+    top: 90%;
+    height: 140%;
+    width: calc(22vh * 0.7);
+    background-size: cover;
+    background-position: 37% 100%;
+    background-image: url(../../../assets/cover/cover-authors-girl.jpg);
+  }
+
+  .cover-content-authors > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 37% 100%;
+  }
+
+  .cover-content-authors > img:nth-child(4) {
+    position: absolute;
+    top: 140%;
+    right: calc(50% + 4vh);
+    height: 85%;
+    object-fit: cover;
+    transform: rotate(-20deg);
+  }
+
+  .cover-content-topscovers {
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    height: 25%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .cover-content-topscovers > div {
+    position: absolute;
+    top: 35%;
+    height: 80%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-image: url(../../../assets/cover/cover-topscovers-band.jpg);
+  }
+
+  .cover-content-topscovers > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,157 @@
+.interview-bg {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.interview-bg-laptop {
+  object-fit: cover;
+  object-position: top right;
+}
+
+.interview-bg-mobile {
+  background-color: #523840;
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .interview-bg-laptop {
+    display: none;
+  }
+
+  .interview-bg-mobile {
+    display: flex;
+  }
+}
+
+.interview {
+  width: 100%;
+}
+
+.interview-header {
+  margin-top: calc(var(--navbar-height) + 28px);
+  margin-bottom: 30px;
+  width: calc(100% - 280px);
+  min-width: 780px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  .interview-header {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+.interview-header > p:nth-child(1) {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .interview-header > p:nth-child(1) {
+    font-size: 30px;
+  }
+}
+
+.interview-header > p:nth-child(2) {
+  font-size: 60px;
+  font-family: "Parisienne", sans-serif;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.interview-header-video {
+  width: 48vw;
+  height: calc(48vw * (1080 / 1920));
+  max-height: 90vh;
+  max-width: calc(90vh * (1920 / 1080));
+  background-image: url(../../assets/divers/bg-video.jpg);
+  background-size: 100% 100%;
+}
+
+@media (max-width: 800px) {
+  .interview-header-video {
+    width: 90vw;
+    height: calc(90vw * (1080 / 1920));
+  }
+}
+
+.interview-contents {
+  width: calc(100% - 280px);
+  min-width: 780px;
+}
+
+@media (max-width: 1023px) {
+  .interview-contents {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+.interview-column {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (max-width: 800px) {
+  .interview-column {
+    width: 100%;
+  }
+}
+
+.interview-block {
+  margin: 20px 10px 0 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .interview-block {
+    margin: 15px 10px 0 15px;
+  }
+}
+
+.interview-question {
+  color: var(--gold);
+  margin-bottom: 5px;
+}
+
+.interview-instagram {
+  height: 625px;
+  width: 400px;
+  max-width: calc(100% - 30px);
+  background-image: url(../../assets/divers/bg-instagram.jpg);
+  background-size: 100% 100%;
+}
+
+.interview-photo-large {
+  margin: 22px 20px 0 20px;
+  width: calc(100% - 40px);
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+@media (max-width: 800px) {
+  .interview-photo-large {
+    margin: 17px 15px 0 15px;
+    width: calc(100% - 30px);
+  }
+}
+
+.interview-comments-icon {
+  width: 20px;
+  height: 100%;
+  margin: auto 0 auto 10px;
+  cursor: pointer;
+}
